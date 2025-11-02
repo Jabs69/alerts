@@ -1,0 +1,33 @@
+{
+  "name": "vite-min-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@mantine/core": "8.2.8",
+    "@mantine/form": "^8.2.8",
+    "@mantine/hooks": "8.2.8",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "vite": "^7.1.4"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@types/workbox-core": "^5.0.0",
+    "@types/workbox-precaching": "^5.0.0",
+    "@vitejs/plugin-react": "^4.5.2",
+    "postcss": "^8.5.5",
+    "postcss-preset-mantine": "1.17.0",
+    "postcss-simple-vars": "^7.0.1",
+    "typescript": "^5.8.3",
+    "vite-plugin-pwa": "^1.1.0"
+  },
+  "packageManager": "yarn@4.9.4"
+}
