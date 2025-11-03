@@ -13,7 +13,7 @@
 
     "node": "20.x"
 
-  }
+  },
   "dependencies": {
     "@mantine/core": "8.2.8",
     "@mantine/form": "^8.2.8",
