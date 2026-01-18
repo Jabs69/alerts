@@ -16,3 +16,17 @@ export async function add(coin: Coin): Promise<{ price: number; last_change: num
     body: JSON.stringify(coin),
   });
 }
+
+export async function deleteCoins(coins: string[]) : Promise<void> {
+
+  return await apiFetch(`${url}`, {
+
+    method: 'DELETE',
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ coins })
+
+  })
+
+}

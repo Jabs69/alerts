@@ -1,5 +1,5 @@
 import apiFetch from "../utils/fetchHelper";
-import { Alert, AlertItem } from "../types/globals";
+import { Alert, AlertItem, AlertToDelete } from "../types/globals";
 
 const url = `${import.meta.env.VITE_API_URL}/alerts`;
 
@@ -32,12 +32,12 @@ export async function editAlert(data: Alert) {
 
 }
 
-export async function deleteAlerts(ids: number[]) {
+export async function deleteAlerts(alerts: AlertToDelete[]) {
 
   const options = {
 
     method: 'DELETE',
-    body: JSON.stringify({ ids })
+    body: JSON.stringify({ alerts })
 
   }
 

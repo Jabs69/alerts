@@ -53,7 +53,8 @@ function addCurrency({ dataItem, onSubmit }: Props) {
         onSubmit({
 
           ...data,
-          alert_id: dataItem.alert_id
+          alert_id: dataItem.alert_id,
+          symbol: dataItem.symbol
 
         });
         return;
@@ -62,7 +63,8 @@ function addCurrency({ dataItem, onSubmit }: Props) {
       else if ('id' in dataItem) {
         const alertData: Alert = {
           ...data,
-          symbol_id: dataItem.id
+          symbol_id: dataItem.id,
+          symbol: dataItem.symbol
         }
         onSubmit(alertData);
       }

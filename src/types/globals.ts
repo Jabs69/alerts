@@ -28,6 +28,7 @@ export interface Alert {
   symbol_id?: string
   alert_type: AlertType
   price: number
+  symbol: string
 
 }
 
@@ -45,3 +46,5 @@ export interface CoinGeckoResponse {
   categories: any[];
   nfts: any[];
 }
+
+export interface AlertToDelete { symbol: string, ids: number[] }
